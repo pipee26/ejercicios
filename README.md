@@ -2,6 +2,10 @@
 
 # 💪 Exercises Dataset
 
+<p align="center">
+  <strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
 <p>
   <img src="videos/0025-EIeI8Vf.gif" width="120" alt="barbell bench press" />
   <img src="videos/0043-qXTaZnJ.gif" width="120" alt="barbell full squat" />
@@ -112,7 +116,8 @@ exercises-dataset/
 ├── index.html               # Interactive exercise browser (client-side, no server needed)
 ├── setup.html               # Developer setup guide (DB import + API integration)
 ├── NOTICE.md                # Media attribution & license terms
-└── README.md
+├── README.md                # English README
+└── README.zh-CN.md          # 中文 README
 ```
 
 ### Key Files
