@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install validator
-        run: npm i ajv
+      - name: Install validator (pinned major version)
+        run: npm i ajv@^8
       - name: Validate exercises.json against the schema
         run: node scripts/validate-schema.mjs

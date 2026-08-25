@@ -190,6 +190,7 @@ Each record in `data/exercises.json` follows this structure. A machine-readable 
 | `instructions.pl` | `string` | Full step-by-step instructions in Polish |
 | `instructions.ko` | `string` | Full step-by-step instructions in Korean |
 | `instructions.fr` | `string` | Full step-by-step instructions in French |
+| `instructions.ar` | `string` | Full step-by-step instructions in Arabic |
 | `instruction_steps.<lang>` | `array[string]` | Same instructions split into an ordered array of steps, per language (`en`, `es`, `it`, `tr`, `ru`, `zh`, `hi`, `pl`, `ko`, `fr`, `ar`) |
 | `muscle_group` | `string` | Primary synergist muscle group |
 | `secondary_muscles` | `array[string]` | Additional muscles involved |
@@ -219,7 +220,8 @@ Each record in `data/exercises.json` follows this structure. A machine-readable 
     "hi": "अपने घुटनों को मोड़कर और पैरों को ज़मीन पर सपाट रखते हुए अपनी पीठ के बल लेट जाएँ।...",
     "pl": "Połóż się płasko na plecach, ugnij kolana i oprzyj stopy płasko na pod ...",
     "ko": "등을 바닥에 누워 무릎을 구부리고 발을 바닥에 붙입니다. ...",
-    "fr": "Allonge-toi sur le dos, les genoux fléchis et les pieds à plat au sol. ..."
+    "fr": "Allonge-toi sur le dos, les genoux fléchis et les pieds à plat au sol. ...",
+    "ar": "استلقِ على ظهرك مع ثني ركبتيك ووضع قدميك على الأرض. ضع يديك خلف رأسك مع توجيه مرفقيك إلى الخارج. ..."
   },
   "muscle_group": "hip flexors",
   "secondary_muscles": ["hip flexors", "lower back"],
@@ -338,6 +340,7 @@ print(ex["instructions"]["hi"])  # Hindi
 print(ex["instructions"]["pl"])  # Polish
 print(ex["instructions"]["ko"])  # Korean
 print(ex["instructions"]["fr"])  # French
+print(ex["instructions"]["ar"])  # Arabic
 ```
 
 ### Python — Load with Pandas
@@ -390,6 +393,7 @@ console.log(ex.instructions.hi); // Hindi
 console.log(ex.instructions.pl); // Polish
 console.log(ex.instructions.ko); // Korean
 console.log(ex.instructions.fr); // French
+console.log(ex.instructions.ar); // Arabic
 ```
 
 ### TypeScript — Type-safe Usage
@@ -412,6 +416,7 @@ interface Exercise {
     pl: string;
     ko: string;
     fr: string;
+    ar: string;
   };
   instruction_steps: {
     en: string[];
@@ -424,6 +429,7 @@ interface Exercise {
     pl: string[];
     ko: string[];
     fr: string[];
+    ar: string[];
   };
   muscle_group: string;
   secondary_muscles: string[];
