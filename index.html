@@ -1574,6 +1574,8 @@
             tabButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             renderSteps(langs[i].steps, langs[i].code);
+            { const tv = tabs.getBoundingClientRect(), bv = btn.getBoundingClientRect();
+              tabs.scrollLeft += bv.left - (tv.left + tv.width / 2 - bv.width / 2); }
           });
         });
       }
