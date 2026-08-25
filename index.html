@@ -1547,8 +1547,6 @@
         list.innerHTML = '';
         list.setAttribute('dir', langCode === 'ar' ? 'rtl' : 'ltr');
         list.lang = langCode || 'en';
-        modalInstr.setAttribute('dir', langCode === 'ar' ? 'rtl' : 'ltr');
-        modalInstr.lang = langCode || 'en';
         steps.forEach((step, i) => {
           const li = document.createElement('li');
           li.className = 'instruction-step';
